@@ -18,7 +18,7 @@ Original Dataset: https://github.com/CSSEGISandData/COVID-19
 
 
 
-Project Report:
+Project Report: https://github.com/TarunUpp/Data-Visualization-Project/blob/main/Visual%20Analysis%20of%20COVID-19.pdf
 
 
 
