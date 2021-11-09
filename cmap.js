@@ -1,6 +1,6 @@
 
 d3.json("output.geojson").then(function(themap){
-    d3.csv("PEdited_confirmed_cases.csv").then(function(dataset){
+    d3.csv("confirmed_cases.csv").then(function(dataset){
     
       
         console.log(themap)
