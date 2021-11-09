@@ -8,7 +8,7 @@ d3.json("output.geojson").then(function(themap){
        
         var svg=d3.select("svg")
         .style("width",2000)
-        .style("height",1000)
+        .style("height",500)
        //colorScale = d3.scaleThreshold() 
          //           .domain([0,0.1*d3.max(Object.values(popPerCountry)),d3.max(Object.values(popPerCountry))])
            //        .domain([5000, 10000, 20000, 50000, 100000, 250000, 500000, 750000, 1000000, 1500000])
