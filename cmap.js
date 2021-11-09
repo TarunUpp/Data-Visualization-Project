@@ -102,4 +102,4 @@ d3.json("output.geojson").then(function(themap){
                     .style("text-anchor", "end")
                     .text(function(d) { return d;  });
         })
-    })
+    })  
