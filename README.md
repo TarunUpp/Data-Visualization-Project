@@ -28,10 +28,9 @@ Breakdown of work among group members:
 
 | Visualization | Author |
 | --- | --- |
-| 1. Line graph | TARUN UPPUTURI |
-| 2. Grouped Bar Chart | TARUN UPPUTURI |
-| 3. Color Map| SAI VINAY NANDIGAM |
-| 4. | SAI VINAY NANDIGAM |
+| 1. Color Map  | SAI VINAY NANDIGAM |
+| 2. Line graph | TARUN UPPUTURI |
+| 3. Grouped Bar Chart| SAI VINAY NANDIGAM & TARUN UPPUTURI |
 
 
 
