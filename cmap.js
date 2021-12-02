@@ -22,7 +22,7 @@ d3.json("output.geojson").then(function(themap){
   
   var projection=d3.geoEqualEarth() //geoMercator geoEqualEarth 
   
-  .fitWidth(1000,{type:"Sphere"}) 
+  .fitWidth(900,{type:"Sphere"}) 
   
   var pathGenerator=d3.geoPath(projection)  
   
