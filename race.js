@@ -16,7 +16,7 @@
     let day_index = 0;
   
     const margin = ({top: 50, right: 20, bottom: 20, left: 20});
-    const width = 1200;
+    const width = 1000;
     const height = 600;
 
     let svg = d3.select("#graph").append("svg")
