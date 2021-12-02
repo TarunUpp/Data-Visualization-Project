@@ -22,7 +22,7 @@ d3.json("output.geojson").then(function(themap){
   
   var projection=d3.geoEqualEarth() //geoMercator geoEqualEarth 
   
-  .fitWidth(800,{type:"Sphere"}) 
+  .fitWidth(1000,{type:"Sphere"}) 
   
   var pathGenerator=d3.geoPath(projection)  
   
@@ -167,17 +167,17 @@ d3.json("output.geojson").then(function(themap){
   
   legend.append("rect") 
   
-  .attr("x", 860) 
+  .attr("x", 1120) 
   
   .attr("width", 25) 
   
-  .attr("height", 17) 
+  .attr("height", 20) 
   
   .style("fill", colorScale); 
   
   legend.append("text") 
   
-  .attr("x", 850) 
+  .attr("x", 1100) 
   
   .attr("y", 18) 
   
