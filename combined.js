@@ -165,7 +165,7 @@ d3.json("output.geojson").then(function(themap){
                                                 .domain([0, d3.max(data, d=>+d.count)])   //d3.max(data, d=>+d.count)
                                                 .range([dimensions.height - dimensions.margin.bottom, dimensions.margin.top])
 								var colours = d3.scaleOrdinal()
-											.range(["#E74C3C", "#196F3D","#9B59B6"]);
+											.range(["#E74C3C", "#196F3D","#DC7633"]);
                                                 
                                 var dots = svg.selectAll("rect")
                                                 .data(data)
@@ -224,7 +224,7 @@ let scaleX = d3.scaleTime()
 
 let xAxis = d3.axisBottom(scaleX)
 	.tickSize(-innerHeight)
-	.tickPadding(30)
+	.tickPadding(10)
 	.ticks(12)
 	.tickFormat(d3.timeFormat("%b-%Y"));
 	
@@ -260,7 +260,7 @@ xG.append("text")
 	.attr("font-size", 14)
 	.attr("fill", "black")
 	.text("Month - Day")
-	.attr("y", 70)
+	.attr("y", 40)
 	.attr("x", innerWidth / 2);
 
 g.append("text")
@@ -314,14 +314,14 @@ render(data);
                         .attr("transform", function(d, i) { return "translate(-20," + i * 20 + ")"; });
                            
             legend.append("rect")
-                    .attr("x", 860)
+                    .attr("x", 720)
                     .attr("width", 25)
                     .attr("height", 17)
                     .style("fill", colorScale);
                         
             legend.append("text")
-                    .attr("x", 850)
-                    .attr("y", 18)
+                    .attr("x", 710)
+                    .attr("y", 15)
                     .style("text-anchor", "end")
                     .text(function(d) { return d;  });
 
