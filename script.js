@@ -72,7 +72,7 @@ d3.csv("line.csv").then(function (data){
 
 
     var xAxis = d3.axisBottom(xScale)
-            .tickValues(xScale.domain().filter(function(d,i){ return !(i%4)})).tickSizeOuter(0)
+            .tickValues(xScale.domain().filter(function(d,i){ return !(i%15)})).tickSizeOuter(0)
 
     svg.append("g")
         .attr("transform", "translate("+ dimensions.margin.left + "," + (dimensions.boundedHeight+dimensions.margin.bottom/4) + ")")
