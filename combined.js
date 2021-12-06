@@ -260,7 +260,7 @@ let xG = g.append("g")
 xG.append("text")
 	.attr("font-size", 18)
 	.attr("fill", "black")
-	.text("Month - Day")
+	.text("Month - Year")
 	.attr("y", 70)
 	.attr("x", innerWidth / 2);
 
