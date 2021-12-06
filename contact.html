@@ -8,6 +8,10 @@
   margin: 0 auto;
 }
 
+div{
+          text-align: justify;
+          text-justify: inter-word;
+        }
 a:link {
   color: #7D3C98;
   font-weight: bold;
@@ -91,19 +95,39 @@ body {
   <h1>Visual Analysis Of COVID-19</h1>
   <p><b>Authors: Sai Vinay Nandigam and Tarun Upputuri</b></p>
 </div>
-
-<br>
 <div>
 
 <button class="btn success"><a href="index.html" >Visualization 1</a></button>
 <button class="btn info"><a href="wDailycounts.html" >Visualization 2</a></button>
 <button class="btn warning"><a href="cRace.html" >Visualization 3</a></button>
-<button class="btn danger"><a href="contact.html">Contact Us</a></button>
+<button class="btn danger"><a href="contact.html">Description</a></button>
 
 
 </div>
-
+<br>
 <div id = "contact">
+<body style="background-color:rgb(213,216,220);">
+<p><b>Overview & Motivation:</b><br></p>
+<div>In Wuhan, China, an unknown infectious disease that appears to be pneumonia was discovered in December 2019. Now called Corona Virus, 
+which is a contagious disease. The persons infected with this disease had previously suffered from respiratory illnesses. 
+From the beginning of the sickness until the present day, many individuals have died due to it, and people are constantly fighting it. 
+There are numerous options for halting the disease's spread. Sharing daily cases and trends from the beginning of the disease's 
+transmission is one of the most effective methods.</div>
+<br>
+<div>Many APIs, repositories, and companies are collecting data about COVID-19 to identify helpful information for controlling the spread of COVID-19. There are several methods for extracting useful information from data. Visual analysis is one of them. A user can better understand and acquire essential insights from the data by looking at the visuals. Also, how quickly a user may obtain insights from the data is dependent on the visualizations.
+The knowledge gathered through visualization of COVID-19 data can be helpful in various ways. Here are a handful of them: If a person wants to go to a particular region, they can check the COVID-19 status in that country to see if they should go or not. A researcher can learn about the severity of COVID-19 in different nations to learn more about the condition, and the information gained may help determine preventive strategies. The governments of the respective countries could prohibit travel from the seriously afflicted countries.
+Different visualizations and their merits and demerits were evaluated and addressed in Big Data Visualization and Visual Analytics of Covid-19 Data. We assessed both advantages and disadvantages in this project, attempted to add interactive features to the visualizations presented in the paper, and gave alternative visualizations.</div>
+
+<p><b>Related work:</b><br>
+<div>Many dashboards are available online. The renowned dashboards are The WHO covid-19 dashboard, Johns Hopkins Univerity dashboard, The Government of Canada's website, The covid-19 dashboard by the European center for disease prevention and control.
+In addition to these dashboards and websites, COVID-19 visuals were described in detail in the paper. The author went over the advantages and disadvantages of each visualization. According to the author, the most common methods for showing spatial data are bubble maps and choropleth maps. The bubble's radius indicated the confirmed cases on the bubble map. The wider the bubble, the more serious the cases. It was difficult to find cases in countries that were closer and smaller in size.
+On the other hand, the choropleth map uses different color hues to show the intensity of covid-19. While the choropleth map solved the problem of the bubble overlapping, it also created a new difficulty: countries with smaller areas were difficult to identify. The author discussed a column chart as an alternative to using a map to visualize spatial data. He also mentioned that temporal data was necessary for displaying daily trends in addition to spatial data. Line graphs, column charts, and stacked areas under curves are visualizations that can represent both spatial and temporal information.
+We were inspired to show COVID-19 data by a geographical map described by Dr. Federico Iuricich in CPSC 6030(Data Visualization). One of the critical motivations for including a few of the interactions in our project was the interactions mentioned by the professor in class.</div>
+<br>
+<div><b>Data:</b> The data for this study was obtained from the COVID-19 Data Repository, which is maintained by Johns Hopkins University's Center for Systems Science and Engineering (CSSE). COVID-19 data from throughout the world is included in the dataset. Countries and their daily confirmed cases, recovered, and daily death cases were the most important attributes in the dataset. There were three datasets for three attributes: one for confirmed cases, one for recovered cases, and one for fatalities count. All of the attributes have been combined into a single data set. The geo.json file, which contains the country name, latitudes, longitudes, and country code, has also been used. To allocate the values to the individual countries, we matched the country codes in both datasets. There were no nation codes in the Covid dataset. We've given them manually in the dataset. The COVID-19 cases were collected regionally for countries like China, Australia, and The United Kingdom in the dataset. 
+We have united all the cases of individual regions and linked the data with their respective countries.</div>
+</body>
+<br><br>
 <footer>
   <p><u>Authors</u>: Sai Vinay Nandigam, Tarun Upputuri<br><br>
   <a href="snandig@g.clemson.edu">snandig@g.clemson.edu</a></p>
@@ -112,6 +136,9 @@ body {
 
 
 <br><br>
+
+ <p><u>Project Screen Cast</u>: <a href="https://www.youtube.com/watch?v=HtZh_5Skaac&ab_channel=SN">https://www.youtube.com/watch?v=HtZh_5Skaac&ab_channel=SN</a></p>
+
 
     <p><u>Data Sources</u>: <a href="https://github.com/CSSEGISandData/COVID-19">https://github.com/CSSEGISandData/COVID-19</a></p>
 	<p> <a href="https://covid19.who.int/WHO-COVID-19-global-data.csv">https://covid19.who.int/WHO-COVID-19-global-data.csv</a></p>
@@ -122,7 +149,7 @@ body {
 </footer>
 </div>
 
-</body>
+
 
 
 </html>
