@@ -105,13 +105,13 @@ d3.json("output.geojson").then(function(themap){
 								
 
                                 var dimensions = {
-                                    width: 500,
-                                    height: 550,
+                                    width: 450,
+                                    height: 400,
                                     margin: {
-                                        top: 80,
-                                        bottom: 220,
-                                        right: 10,
-                                        left: 100
+                                        top: 100,
+                                        bottom: 120,
+                                        right: 50,
+                                        left: 80
                                     }
                                 }
                                 var svg = d3.select("#forces")
@@ -170,16 +170,16 @@ d3.json("output.geojson").then(function(themap){
 									.attr("font-size", 14)
 									.attr("fill", "black")
 									.text("Number of cases")
-									.attr("dx", "-20em")
-									.attr("dy", "2.5em")
+									.attr("dx", "-16em")
+									.attr("dy", "0.8em")
 									.attr("transform", "rotate(-90)");	
 								gt.append("text")
 									.attr("font-family", "sans-serif")
 									.text(countryname[i.properties.ADM0_A3] + " COVID Cases Comparison")
 									.attr("font-size", 16)
-									.attr("y", 12)
+									.attr("y", 40)
 									.attr("id","idtext")
-									.attr("x", innerWidth /12);
+									.attr("x", innerWidth /24);
                                 var xAxis = svg.append("g")
                                                 .call(xAxisgen)
                                                 .style("transform", `translateY(${dimensions.height - dimensions.margin.bottom}px)`)
@@ -194,7 +194,7 @@ console.log(popPerCountry[i.properties.ADM0_A3])
 document.getElementById("details").innerHTML="Country: "+countryname[i.properties.ADM0_A3]+","+" Confirmed Cases: "+popPerCountry[i.properties.ADM0_A3] +" , "
                                                                          + "Recovered: "+ recovPerCountry[i.properties.ADM0_A3]+", "+"Deaths: "+deathspercountry[i.properties.ADM0_A3]
 var svg = d3.select("body").append("svg")
-.attr("width", 1150)
+.attr("width", 1050)
 .attr("height", 500)
 .attr("id","id5")
 
@@ -209,10 +209,10 @@ let xVal = d => d.date;
 let yVal = d => d.cases;
 
 let margin = {
-	top: 40,
-	right: 150,
-	bottom: 200,
-	left: 325
+	top: 100,
+	right: 200,
+	bottom: 100,
+	left: 225
 };
 
 
